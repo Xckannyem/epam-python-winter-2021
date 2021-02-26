@@ -11,5 +11,5 @@ args = parser.parse_args()
 
 try:
     print(eval('operator.' + args.operator + '(' + args.first_value + ',' + args.second_value + ')'))
-except:
+except BaseException:
     raise NotImplementedError

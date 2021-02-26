@@ -14,5 +14,6 @@ for i in range(len(args.formula) - 1):
         sys.exit(0)
 try:
     print(True, eval(args.formula))
-except:
+except Exception as e:
     print(False, None)
+    raise e
